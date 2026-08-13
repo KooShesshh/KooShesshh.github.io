@@ -1,0 +1,131 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: black;
+    color: white;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(assets/Wallpaper.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+
+.terminal {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  background-color: white;
+  color: #b59ef0;
+  margin: 50px 177.5px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 8px;
+  border: 2px solid #b59ef0;
+  height: 500px;
+  width: 1000px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0.9;
+  animation: ghost 2s;
+}
+
+@keyframes ghost {
+  from {opacity: 0;}
+  to {opacity: 0.9;}
+}
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  padding: 1px 0;
+  white-space: nowrap;
+}
+
+.terminal-line.output {
+  color: #b59ef0;
+}
+
+.terminal-line.active .command {
+  caret-color: #b59ef0;
+}
+
+.terminal-prompt {
+  margin-left: 5px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.prompt-user {
+  color: #b59ef0;
+  font-weight: 600;
+}
+
+.prompt-at {
+  color: #b59ef0;
+}
+
+.prompt-host {
+  color: #b59ef0;
+  font-weight: 600;
+}
+
+.prompt-path {
+  color: #b59ef0;
+}
+
+.prompt-symbol {
+  color: #b59ef0;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.command {
+  color: #b59ef0;
+  outline: none;
+  flex-grow: 1;
+  min-width: 0;
+  margin-left: 6px;
+}
+
+.command:empty:not(:focus)::before {
+  content: "";
+  }
+
+.output-text {
+  color: #b59ef0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.terminal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.terminal::-webkit-scrollbar-track {
+  background: #b59ef0;
+}
+
+.terminal::-webkit-scrollbar-thumb {
+  background-color: #b59ef0;
+  border-radius: 5px;
+  border: 2px solid #b59ef0;
+}
+
+.terminal::-webkit-scrollbar-thumb:hover {
+  background-color: #b59ef0;
+}
+
+.terminal ::selection {
+  background-color: #b59ef0;
+  color: #b59ef0;
+}
