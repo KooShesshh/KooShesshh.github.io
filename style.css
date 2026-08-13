@@ -185,13 +185,15 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+
   html, body {
     overflow: auto !important;
     height: auto !important;
+    text-align: center !important;
   }
 
   .pfp {
-    padding: 25px 15px !important;
+    padding: 30px 15px !important;
     margin: 0 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -204,8 +206,10 @@ body {
   .pfp img {
     width: 200px !important;
     height: 200px !important;
-    margin: 10px auto 20px auto !important;
+    margin: 15px auto 20px auto !important;
     position: static !important;
+    left: auto !important;
+    bottom: auto !important;
   }
 
   .pfp h1 {
@@ -214,9 +218,10 @@ body {
     bottom: auto !important;
     top: auto !important;
     margin: 10px auto !important;
-    padding: 10px 20px !important;
+    padding: 10px 18px !important;
     white-space: normal !important;
-    font-size: 1.3rem !important;
+    font-size: 1.35rem !important;
+    width: fit-content !important;
   }
 
   .pfp p {
@@ -228,6 +233,7 @@ body {
     max-width: 320px !important;
     margin: 12px auto !important;
     padding: 12px !important;
+    text-align: center !important;
     white-space: normal !important;
   }
 
@@ -235,19 +241,16 @@ body {
     position: static !important;
     left: auto !important;
     bottom: auto !important;
-    margin: 15px auto !important;
+    margin: 16px auto !important;
     display: inline-block !important;
+    width: fit-content !important;
   }
 
   .boton {
     position: static !important;
     left: auto !important;
     bottom: auto !important;
-    margin: 10px !important;
     display: inline-block !important;
-  }
-
-  .body {
-    text-align: center;
+    margin: 8px 6px !important;
   }
 }
