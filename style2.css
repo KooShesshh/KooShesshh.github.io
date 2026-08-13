@@ -185,4 +185,8 @@ body {
   .terminal::-webkit-scrollbar {
     width: 5px !important;
   }
+
+  .terminal-line.active .command {
+    margin-left: 2px !important;
+  }
 }
