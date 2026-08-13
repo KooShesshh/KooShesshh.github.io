@@ -13,20 +13,21 @@ html, body {
 }
 
 .pfp {
-    margin: 0 !important;
-    min-height: 100vh;
-    box-sizing: border-box;
-    padding-right: 800px;
-    padding-left: 200px;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    margin-right: 67px;
-    margin-top: 67px;    
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .pfp img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border: 2px solid #b59ef0;
     border-radius: 6px;
     animation-duration: 3s;
@@ -35,12 +36,8 @@ html, body {
 }
 
 .boton {
-  position: relative;
   bottom: 350px;
   left: 640px;
-  margin-left: 15px;
-  margin-right: 0px;
-  display: inline-block;
   padding-bottom: 9px;
   padding-top: 9px;
   padding-left: 24px;
@@ -59,9 +56,7 @@ html, body {
 }
 
 .pfp .terminal{
-    position: relative;
     text-decoration: none;
-    display: flex;
     color: #b59ef0;
     bottom: 69px;
     max-width: 280px;
@@ -181,5 +176,45 @@ body {
   to {
     translate: 0 0;
     scale: 100% 1;
+  }
+}
+
+.pfp .terminal,
+.boton {
+  position: static;
+  margin: 12px 8px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .pfp {
+    padding: 20px 15px;
+  }
+
+  .pfp img {
+    max-width: 220px;
+  }
+
+  .pfp h1,
+  .pfp p {
+    position: static;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    white-space: normal; 
+  }
+
+  .boton {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin: 8px;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;  
   }
 }
