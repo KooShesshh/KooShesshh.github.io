@@ -221,7 +221,7 @@ body {
 
   .pfp p {
     position: static !important;
-    left: auto !important;
+    right: 3px !important;
     bottom: auto !important;
     height: auto !important;
     width: 100% !important;
@@ -241,7 +241,7 @@ body {
 
   .boton {
     position: static !important;
-    left: auto !important;
+    left: 6px !important;
     bottom: auto !important;
     margin: 8px 6px !important;
     display: inline-block !important;
