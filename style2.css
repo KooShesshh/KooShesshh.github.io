@@ -157,15 +157,22 @@ body {
   .terminal-line {
     white-space: normal !important;
     flex-wrap: wrap !important;
-    padding: 4px 8px !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    padding: 6px 10px !important;
   }
 
   .terminal-prompt {
-    margin-left: 1px !important;
+    flex-shrink: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    white-space: nowrap !important;
   }
 
   .command {
-    margin-left: 4px !important;
+    flex-grow: 1 !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
     word-break: break-all !important;
   }
 
