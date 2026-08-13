@@ -195,8 +195,7 @@ body {
 }
 
   .output-text,
-  .terminal pre,
-  .terminal .ascii,
+  .terminal,
   .terminal-line.output {
     line-height: 1.0 !important;
     font-size: 9px !important;
