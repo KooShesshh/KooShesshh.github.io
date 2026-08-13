@@ -184,7 +184,13 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+portant;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: auto;
+    max-width: 100%;
+    margin: 12px auto;@media (max-width: 900px) {
   .pfp {
     padding: 40px 20px;
     align-items: center;
@@ -202,13 +208,7 @@ body {
   .pfp .terminal,
   .boton {
     position: static !important;
-    left: auto !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: auto;
-    max-width: 100%;
-    margin: 12px auto;
+    left: auto !im
     white-space: normal;
   }
 
