@@ -184,49 +184,66 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   html, body {
-    overflow: auto;  
-    height: auto;
+    overflow: auto !important;
+    height: auto !important;
   }
 
   .pfp {
-    padding: 30px 20px !important;
+    padding: 25px 15px !important;
     margin: 0 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+    min-height: auto !important;
   }
 
   .pfp img {
-    width: 220px !important;
-    height: 220px !important;
-    margin: 0 auto 20px auto;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 10px auto 20px auto !important;
+    position: static !important;
   }
 
-  .pfp h1,
-  .pfp p,
-  .pfp .terminal,
-  .boton {
+  .pfp h1 {
     position: static !important;
     left: auto !important;
     bottom: auto !important;
     top: auto !important;
-    right: auto !important;
-    width: auto !important;
-    max-width: 100%;
-    margin: 12px auto !important;
+    margin: 10px auto !important;
+    padding: 10px 20px !important;
     white-space: normal !important;
-    height: auto !important;
+    font-size: 1.3rem !important;
   }
 
   .pfp p {
-    max-width: 340px;
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 10px auto !important;
+    padding: 12px !important;
+    white-space: normal !important;
+  }
+
+  .pfp .terminal {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 15px auto !important;
+    display: inline-block !important;
   }
 
   .boton {
-    display: inline-block;
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
     margin: 8px 6px !important;
+    display: inline-block !important;
   }
 }
