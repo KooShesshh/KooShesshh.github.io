@@ -129,3 +129,46 @@ body {
   background-color: #b59ef0;
   color: #b59ef0;
 }
+
+@media screen and (max-width: 900px) {
+
+  html, body {
+    overflow: auto !important;
+    height: auto !important;
+  }
+
+  .terminal {
+    width: 92% !important;
+    max-width: 100% !important;
+    height: 70vh !important;
+    min-height: 380px !important;
+    margin: 20px auto !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .terminal-line {
+    white-space: normal !important;
+    flex-wrap: wrap !important;
+    padding: 3px 0 !important;
+  }
+
+  .terminal-prompt {
+    margin-left: 4px !important;
+  }
+
+  .command {
+    margin-left: 4px !important;
+    word-break: break-all !important;
+  }
+
+  .output-text {
+    word-break: break-word !important;
+    white-space: pre-wrap !important;
+  }
+
+  .terminal::-webkit-scrollbar {
+    width: 6px !important;
+  }
+}
