@@ -183,3 +183,50 @@ body {
     scale: 100% 1;
   }
 }
+
+@media (max-width: 900px) {
+  html, body {
+    overflow: auto;  
+    height: auto;
+  }
+
+  .pfp {
+    padding: 30px 20px !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pfp img {
+    width: 220px !important;
+    height: 220px !important;
+    margin: 0 auto 20px auto;
+  }
+
+  .pfp h1,
+  .pfp p,
+  .pfp .terminal,
+  .boton {
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    right: auto !important;
+    width: auto !important;
+    max-width: 100%;
+    margin: 12px auto !important;
+    white-space: normal !important;
+    height: auto !important;
+  }
+
+  .pfp p {
+    max-width: 340px;
+  }
+
+  .boton {
+    display: inline-block;
+    margin: 8px 6px !important;
+  }
+}
