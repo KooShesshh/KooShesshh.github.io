@@ -152,6 +152,7 @@ body {
     border-right: none !important;
     font-size: 14px !important;
     box-sizing: border-box !important;
+    line-height: 1.05 !important;
   }
 
 .terminal-line {
@@ -163,6 +164,10 @@ body {
     gap: 0 !important;
     padding: 8px 12px !important;
     text-align: left !important;
+    line-height: 1.0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
   }
 
 .terminal-prompt {
@@ -188,8 +193,16 @@ body {
     white-space: pre !important;
     line-height: 1.05 !important;
 }
-  }
 
+  .output-text,
+  .terminal pre,
+  .terminal .ascii,
+  .terminal-line.output {
+    line-height: 1.0 !important;
+    font-size: 9px !important;
+    white-space: pre !important;
+  }
+  
   .terminal::-webkit-scrollbar {
     width: 5px !important;
   }
@@ -198,3 +211,5 @@ body {
     margin-left: 5px !important;
   }
 }
+
+
