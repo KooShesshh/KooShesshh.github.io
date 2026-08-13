@@ -30,58 +30,65 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 30px 20px;
+  padding: 60px 80px 60px 120px;
   box-sizing: border-box;
-  gap: 18px;
+  position: relative;
 }
 
 .pfp img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border: 2px solid #b59ef0;
   border-radius: 6px;
   opacity: 0.9;
   animation: slide-in-right 3s ease-out;
+  display: block;
 }
 
 .pfp h1 {
+  position: absolute;
+  top: 180px;
+  left: 460px;
   margin: 0;
   color: #b59ef0;
   border: 2px solid #b59ef0;
   border-radius: 6px;
   background-color: white;
-  padding: 10px 30px;
+  padding: 12px 40px;
   font-family: "Pixelify Sans", sans-serif;
   font-weight: 300;
+  white-space: nowrap;
   opacity: 0.9;
   animation: slide-in-right 3s ease-out;
 }
 
 .pfp p {
+  position: absolute;
+  top: 280px;
+  left: 460px;
+  width: 420px;
   margin: 0;
-  max-width: 480px;
   color: #b59ef0;
   border: 2px solid #b59ef0;
   border-radius: 6px;
   background-color: white;
-  padding: 12px 16px;
+  padding: 14px 16px;
   font-family: "Pixelify Sans", sans-serif;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.45;
   opacity: 0.9;
   animation: slide-in-left 2s ease-out;
 }
 
 .pfp .terminal {
+  position: absolute;
+  top: 480px;
+  left: 460px;
   display: inline-block;
   text-decoration: none;
   color: #b59ef0;
-  max-width: 280px;
   padding: 10px 18px;
   border: 2px solid #b59ef0;
   border-radius: 6px;
@@ -100,9 +107,12 @@ body {
 }
 
 .boton {
+  position: absolute;
+  bottom: 80px;
+  right: 120px;
   display: inline-block;
-  margin: 8px;
-  padding: 9px 24px;
+  margin-left: 12px;
+  padding: 9px 22px;
   background-color: white;
   color: #b59ef0;
   text-decoration: none;
@@ -122,7 +132,7 @@ body {
 
 @keyframes slide-in-up {
   from {
-    transform: translateY(150vw) scale(2, 1);
+    transform: translateY(120vh) scale(1.8, 1);
   }
   to {
     transform: translateY(0) scale(1, 1);
@@ -131,7 +141,7 @@ body {
 
 @keyframes slide-in-right {
   from {
-    transform: translateX(150vw) scale(2, 1);
+    transform: translateX(100vw) scale(1.6, 1);
   }
   to {
     transform: translateX(0) scale(1, 1);
@@ -140,34 +150,48 @@ body {
 
 @keyframes slide-in-left {
   from {
-    transform: translateX(-150vw) scale(2, 1);
+    transform: translateX(-80vw) scale(1.5, 1);
   }
   to {
     transform: translateX(0) scale(1, 1);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .pfp {
-    padding: 25px 15px;
-    gap: 14px;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .pfp img {
-    max-width: 220px;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 20px auto;
   }
 
-  .pfp h1 {
-    font-size: 1.4rem;
-    padding: 8px 18px;
+  .pfp h1,
+  .pfp p,
+  .pfp .terminal,
+  .boton {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: auto;
+    max-width: 100%;
+    margin: 12px auto;
+    white-space: normal;
   }
 
   .pfp p {
-    max-width: 100%;
-    font-size: 0.95rem;
+    width: 100%;
+    max-width: 340px;
   }
 
-  .pfp .terminal {
-    max-width: 90%;
+  .boton {
+    display: inline-block;
+    margin: 8px 6px;
   }
 }
