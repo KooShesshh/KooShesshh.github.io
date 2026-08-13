@@ -224,17 +224,28 @@ body {
     width: fit-content !important;
   }
 
-  .pfp p {
+ .pfp p {
     position: static !important;
     left: auto !important;
     bottom: auto !important;
+    top: auto !important;
+    right: auto !important;
     height: auto !important;
-    width: 100% !important;
-    max-width: 320px !important;
-    margin: 12px auto !important;
-    padding: 12px !important;
+    width: 90% !important;
+    max-width: 340px !important;
+    margin: 15px auto !important;
+    padding: 14px 12px !important;
     text-align: center !important;
     white-space: normal !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #b59ef0 !important;
+    background-color: white !important;
+    border: 2px solid #b59ef0 !important;
+    border-radius: 6px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
   }
 
   .pfp .terminal {
