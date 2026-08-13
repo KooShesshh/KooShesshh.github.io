@@ -221,12 +221,12 @@ body {
 
   .pfp p {
     position: static !important;
-    right: 3px !important;
+    left: auto !important;
     bottom: auto !important;
     height: auto !important;
     width: 100% !important;
     max-width: 320px !important;
-    margin: 10px auto !important;
+    margin: 12px auto !important;
     padding: 12px !important;
     white-space: normal !important;
   }
@@ -241,9 +241,13 @@ body {
 
   .boton {
     position: static !important;
-    left: 6px !important;
+    left: auto !important;
     bottom: auto !important;
-    margin: 8px 6px !important;
+    margin: 10px !important;
     display: inline-block !important;
+  }
+
+  .body {
+    text-align: center;
   }
 }
