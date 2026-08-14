@@ -8,4 +8,4 @@ https://kooshesshh.github.io/
 ## Terminal-Preview
 <img width="1356" height="649" alt="image" src="https://github.com/user-attachments/assets/306dff69-8de5-438c-ab0a-02c2d4b32be4" />
 
->.<
+## Thats all >.<
