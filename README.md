@@ -1,4 +1,4 @@
-# KooShesshh.github.io
+# KooShesshh Website
 
 https://kooshesshh.github.io/
 
