@@ -211,6 +211,7 @@ body {
     position: static !important;
     left: auto !important;
     bottom: auto !important;
+    opacity: 0.9 !important;
   }
 
   .pfp h1 {
@@ -223,6 +224,7 @@ body {
     white-space: normal !important;
     font-size: 1.35rem !important;
     width: fit-content !important;
+    opacity: 0.9 !important;
   }
 
  .pfp p {
@@ -239,7 +241,7 @@ body {
     text-align: center !important;
     white-space: normal !important;
     display: block !important;
-    opacity: 1 !important;
+    opacity: 0.9 !important;
     visibility: visible !important;
     color: #b59ef0 !important;
     background-color: white !important;
@@ -247,6 +249,7 @@ body {
     border-radius: 6px !important;
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
+    opacity: 0.9 !important;
   }
 
   .pfp .terminal {
@@ -256,6 +259,7 @@ body {
     margin: 16px auto !important;
     display: inline-block !important;
     width: fit-content !important;
+    opacity: 0.9 !important;
   }
 
   .boton {
@@ -264,5 +268,6 @@ body {
     bottom: auto !important;
     display: inline-block !important;
     margin: 8px 6px !important;
+    opacity: 0.9 !important;
   }
 }
