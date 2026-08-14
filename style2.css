@@ -37,8 +37,6 @@ body {
   overflow-x: hidden;
   opacity: 0.9;
   animation: ghost 2s;
-  line-height: 1.0 !important;
-  white-space: pre !important;
 }
 
 @keyframes ghost {
@@ -54,8 +52,6 @@ body {
 }
 
 .terminal-line.output {
-  line-height: 1.0;
-  white-space: pre;
   color: #b59ef0;
 }
 
@@ -107,8 +103,6 @@ body {
 
 .output-text {
   color: #b59ef0;
-  white-space: pre;
-  line-height: 1.0;
   word-break: break-all;
 }
 
@@ -134,6 +128,14 @@ body {
   background-color: #b59ef0;
   color: #b59ef0;
 }
+
+
+.output-text,
+.terminal,
+.terminal-line.output {
+  line-height: 1.0 !important;
+  white-space: pre !important;
+  }
 
 @media screen and (max-width: 900px) {
 
