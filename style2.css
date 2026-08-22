@@ -24,13 +24,13 @@ body {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  background-color: white;
-  color: #b59ef0;
+  background-color: #342e32;
+  color: #af0412;
   margin: 50px 177.5px;
   font-size: 14px;
   line-height: 1.5;
   border-radius: 8px;
-  border: 2px solid #b59ef0;
+  border: 2px solid #af0412;
   height: 500px;
   width: 1000px;
   overflow-y: auto;
@@ -52,11 +52,11 @@ body {
 }
 
 .terminal-line.output {
-  color: #b59ef0;
+  color: #af0412;
 }
 
 .terminal-line.active .command {
-  caret-color: #b59ef0;
+  caret-color: #af0412;
 }
 
 .terminal-prompt {
@@ -66,31 +66,31 @@ body {
 }
 
 .prompt-user {
-  color: #b59ef0;
+  color: #af0412;
   font-weight: 600;
 }
 
 .prompt-at {
-  color: #b59ef0;
+  color: #af0412;
 }
 
 .prompt-host {
-  color: #b59ef0;
+  color: #af0412;
   font-weight: 600;
 }
 
 .prompt-path {
-  color: #b59ef0;
+  color: #af0412;
 }
 
 .prompt-symbol {
-  color: #b59ef0;
+  color: #af0412;
   font-weight: 700;
   margin-left: 4px;
 }
 
 .command {
-  color: #b59ef0;
+  color: #af0412;
   outline: none;
   flex-grow: 1;
   min-width: 0;
@@ -102,7 +102,7 @@ body {
   }
 
 .output-text {
-  color: #b59ef0;
+  color: #af0412;
   word-break: break-all;
 }
 
@@ -111,22 +111,22 @@ body {
 }
 
 .terminal::-webkit-scrollbar-track {
-  background: #b59ef0;
+  background: #af0412;
 }
 
 .terminal::-webkit-scrollbar-thumb {
-  background-color: #b59ef0;
+  background-color: #af0412;
   border-radius: 5px;
-  border: 2px solid #b59ef0;
+  border: 2px solid #af0412;
 }
 
 .terminal::-webkit-scrollbar-thumb:hover {
-  background-color: #b59ef0;
+  background-color: #af0412;
 }
 
 .terminal ::selection {
-  background-color: #b59ef0;
-  color: #b59ef0;
+  background-color: #af0412;
+  color: #af0412;
 }
 
 
