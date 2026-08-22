@@ -137,6 +137,14 @@ body {
   white-space: pre !important;
   }
 
+.output-text {
+  font-family: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+  white-space: pre;
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-size: 13px;
+}
+
 @media screen and (max-width: 1200px) {
 
   html, body {
